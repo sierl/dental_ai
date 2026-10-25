@@ -1,4 +1,5 @@
 data/
+model/best.pt
 .venv/
 **/__pycache__/
 *.py[cod]

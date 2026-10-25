@@ -12,9 +12,10 @@ from ultralytics import YOLO
 
 # Find the project folder and model file.
 PROJECT_DIR = Path(__file__).resolve().parent.parent
-DATASET_DIR = PROJECT_DIR / "data" / "dental-disease-panoramic-detection-dataset"
-MODEL_PATH = DATASET_DIR / "best.pt"
-SAMPLES_DIR = DATASET_DIR / "YOLO" / "YOLO" / "valid" / "images"
+MODEL_PATH = PROJECT_DIR/ "model" / "best.pt"
+
+# Sample images are taken from PROJECT_DIR/data/dental-disease-panoramic-detection-dataset/YOLO/YOLO/valid/images.
+SAMPLES_DIR = PROJECT_DIR / "sample_images"
 
 # Load the trained YOLO model once when the backend starts.
 if not MODEL_PATH.is_file():
