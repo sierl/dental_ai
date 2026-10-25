@@ -23,7 +23,10 @@ dental_ai/
 │   └── main.py
 ├── data/
 │   └── dental-disease-panoramic-detection-dataset/
-│       └── best.pt
+├── model/
+│   └── best.pt
+├── sample_images/
+│   └── many images...
 ├── .gitignore
 ├── pyproject.toml
 ├── uv.lock
@@ -35,7 +38,7 @@ dental_ai/
 1. Install [uv](https://docs.astral.sh/uv/).
 2. Place the model `best.pt` at:
 
-   `data/dental-disease-panoramic-detection-dataset/best.pt`
+   `model/best.pt`
 
 3. From the project root, install the dependencies:
 
